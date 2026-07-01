@@ -38,7 +38,6 @@ section:nth-of-type(even){
     position: relative;
     width: 760px;
     height: 730px;
-    border: 2px solid gold;
 }
 
 .logos{
@@ -137,13 +136,70 @@ section:nth-of-type(even){
     z-index: 3;
 }
 
-#hero-section nav{
+#small-butterfly{
+    position: absolute;
+    top: 130px;
+}
+
+#big-butterfly{
+    position: absolute;
+    left: 30px;
+}
+
+.right-hero .butterflies{
+    position: absolute;
+    left: 480px;
+    top: 450px;
+}
+
+.right-hero h2, p{
+    color: #FFFF;
     font-family: 'BootzyTM', sans-serif;
+}
+
+.right-hero h2{
+    font-weight: 100;
+}
+
+.short-description{
+    position: absolute;
+    top: 660px;
+    left: 560px;
+    text-align: right;
+}
+
+#hero-section nav a{
+    color: #FFFF;
+    text-decoration: none;
+    font-weight: 100;
+    font-family: 'BootzyTM', sans-serif;
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+
+#hero-section nav{
+    position: absolute;
+    top: 320px;
+    left: 700px;
+    display: flex;
+    gap: 90px;
 }
 
 #about-section{
     display: flex;
     flex-direction: column;
+    font-family: 'BootzyTM', sans-serif;
+
+    height: 500px;
+}
+
+#about-section nav{
+    background-color: #0e0e0e;
+    opacity: 50%;
+}
+
+#about-section nav a{
+    color: rgb(255, 255, 255);
 }
 
 #designs-section{
