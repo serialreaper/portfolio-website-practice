@@ -27,17 +27,26 @@ section:nth-of-type(even){
 
 /* Hero-Section */
 
+#hero-section{
+    height: auto;
+    width: auto;
+}
 
 .left-hero{
     display: flex;
     align-items: flex-end;
+    position: relative;
+    width: 760px;
+    height: 730px;
+    border: 2px solid gold;
 }
 
 .logos{
     display: flex;
     flex-direction: column;
-    margin-left: 30px;
-    margin-bottom: 250px;
+    margin-left: 50px;
+    margin-bottom: 300px;
+    position: absolute;
 }
 
 .logos h1{
@@ -47,31 +56,102 @@ section:nth-of-type(even){
 }
 
 #logo2{
-    z-index: 3;
+    z-index: 4;
     margin-top: -40px;
+    font-weight: 100;
+    -webkit-text-stroke: 1px #95598c;
+    -webkit-text-fill-color: transparent; 
 }
 
 #logo3{
     margin-top: -40px;
 }
 
-#hero-section #logo2{
-    font-weight: 100;
-    -webkit-text-stroke: 1px #95598c;
-    -webkit-text-fill-color: transparent; 
+#model{
+    height: 800px;
+    width: 800px;
+    z-index: 3;
+    position: absolute;
+    right: 40px;
 }
 
-#hero-section img{
-    height: 700px;
-    width: 700px;
-
-}
 
 .stars img{
-    height: 50px;
-    width: 50px;
+    height: 380px;
+    width: 380px;
+}
+
+
+#star-left{
+    position: absolute;
+    top: 400px;
+    left: 280px;
+}
+
+#star-out-left{
+    position: absolute;
+    top: 400px;
+    left: 280px;
+    z-index: 4;
+}
+
+#left-butterfly{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 150px;
+    left: 500px;
+}
+
+/* RIGHT HERO */
+
+.right-hero{
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    width: 800px;
+    height: 730px;
+
+}
+
+#big-butterfly{
+    width: 200px;
+    height: 200px;
+}
+
+#small-butterfly{
+    width: 70px;
+    height: 70px;
+}
+
+#star-right{
+    position: absolute;
+    left: 545px;
+    bottom: 450px;
+}
+
+#star-out-right{
+    position: absolute;
+    left: 525px;
+    bottom: 460px;
+    z-index: 3;
 }
 
 #hero-section nav{
     font-family: 'BootzyTM', sans-serif;
+}
+
+#about-section{
+    display: flex;
+    flex-direction: column;
+}
+
+#designs-section{
+    display: flex;
+    flex-direction: column;
+}
+
+#contact-section{
+    display: flex;
+    flex-direction: column;
 }
