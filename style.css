@@ -1,3 +1,77 @@
-body{
-    /*background-color: #030303;*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'BootzyTM';
+    src: url(assets/fonts/BootzyTM.ttf);
+    font-weight: normal;
+}
+
+/* General Section */
+section{
+    display: flex;
+}
+
+
+/* Section Background */
+section:nth-of-type(odd){
+    background-color: #030303;
+}
+
+section:nth-of-type(even){
+    background-color: #95598c;
+}
+
+/* Hero-Section */
+
+
+.left-hero{
+    display: flex;
+    align-items: flex-end;
+}
+
+.logos{
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    margin-bottom: 250px;
+}
+
+.logos h1{
+    font-size: 98px;
+    color: #95598c;
+    font-family: 'UnifrakturMaguntia', serif;
+}
+
+#logo2{
+    z-index: 3;
+    margin-top: -40px;
+}
+
+#logo3{
+    margin-top: -40px;
+}
+
+#hero-section #logo2{
+    font-weight: 100;
+    -webkit-text-stroke: 1px #95598c;
+    -webkit-text-fill-color: transparent; 
+}
+
+#hero-section img{
+    height: 700px;
+    width: 700px;
+
+}
+
+.stars img{
+    height: 50px;
+    width: 50px;
+}
+
+#hero-section nav{
+    font-family: 'BootzyTM', sans-serif;
 }
